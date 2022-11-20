@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MedCity | Saúde em primeiro lugar</title>
+    <link rel="icon" href="../../imagens/medcity-logo-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <script src="https://kit.fontawesome.com/fb10b6ad7c.js" crossorigin="anonymous"></script>
+
+    <script>
+		function preload(el, interval) {
+			var op = 1;
+			var timer = setInterval(function () {
+				if (op <= 0.7) {
+					clearInterval(timer);
+					el.style.display = 'none';
+					el.className = '';
+				}
+				el.style.opacity = op;
+				op -= op * 0.1;
+			}, interval);
+		}
+		window.onload = function () {
+			var div = document.getElementById('preload');
+			preload(div, 500);
+		};
+	</script> 
+   <style>
+	.menu-mobile{
+        	background-color: #0abbb5;
+    	}
+	.class-2{
+            background-color: #3acbc6;
+            color: white;
+            font-weight: bolder;
+            font-size: 1.1rem;
+        } 
+
+        .class-3{
+            background-color: #6adbd9;
+            color: white;
+            font-weight: bolder;
+            font-size: 1.1rem;
+        }
+        .class-4{
+            background-color: #86e2e1;
+            color: cadetblue;
+            font-weight: bolder;
+            font-size: 1.1rem;
+        }
+	.class-5{
+            background-color: #cafcfb;
+            color: cadetblue;
+	    font-weight: bolder;
+            font-size: 1.1rem;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <header>
+        <address>
+            <i class="fa fa-phone"></i>Central de Atendimento: (34) 1111-1111 | <i class="fa fa-envelope-o"></i>email: medcity_contact@ficmail.com 
+        </address>
+	<div class="menu-mobile sticky-top">
+		<a href="../../../"><img src="../../imagens/medcity-logo-alt.png" class="img-fluid" width="200"></a>
+	   	<button class="btn btn-outline-light" id="toggle-btn"><i class="fas fa-bars"></i></button>
+	</div>
+    </header>
+    <nav id="mobile-nav" class="col-12 col-sm-12 col-md-12 col-lg-7 col-lg-offset-2">
+		<a class="nav-link text-center text-white class-2" href="../galeria">Galeria de Fotos</a>
+                <a class="nav-link text-center text-white class-3" href="../cadastro">Cadastro de Endereço</a>
+                <a class="nav-link text-center text-white class-4" href="../agendamento">Agendamento</a>
+		<a class="nav-link text-center text-info class-5" href="../../../index.html">Login</a>
+    </nav>
+    <div id="preload" class="preload"></div>
+    <div class="container">
+	<div class="menu-desk">
+        <nav class="navbar navbar-expand-lg sticky-top bg-white d-flex justify-content-between">
+            <a class="navbar-brand" href="../../../"><img src="../../imagens/medcity-logo.png"></a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="../../../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../galeria">Galeria de Fotos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../cadastro">Cadastro de Endereço</a></li>
+                <li class="nav-item"><a class="nav-link" href="../agendamento">Agendamento</a></li>
+		
+            </ul>
+            <button type="button" class="btn btn-outline-primary" id="login-btn">Login <i class="fa fa-user-circle-o"></i></button>
+        </nav>
+	</div>
+        <main>
+            <div class="row">
+                <div class="col-md-3 gy-4">
+                    <div class="card" style="width: 18rem; height: 22rem;">
+                        <img class="card-img-top" src="../../imagens/Clinica1.jpg" alt="Recepção">
+                        <div class="card-body">
+                          <p class="card-text">Contamos com uma estrutura moderna e instalações novas para recepcionar a todos da melhor forma possível.</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col-md-3 gy-4">
+                    <div class="card" style="width: 18rem; height: 22rem;">
+                        <img class="card-img-top" src="../../imagens/Clinica2.jpg" alt="Recepção">
+                        <div class="card-body">
+                            <p class="card-text">Nossos pontos de atendimento são estratégicamente pensados para obter maior eficiência na comunicação e nos serviços.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 gy-4">
+                    <div class="card" style="width: 18rem; height: 22rem;">
+                        <img class="card-img-top" src="../../imagens/Clinica3.jpg" alt="Recepção">
+                        <div class="card-body">
+                            <p class="card-text">Sempre há um ponto de atendimento em cada setor de cada uma de nossas instalações. Assim você pode receber informações de maneira rápida e fácil.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 gy-4">
+                    <div class="card" style="width: 18rem; height: 22rem;">
+                        <img class="card-img-top" src="../../imagens/Clinica4.jpg" alt="Enfermeira fazendo anotações">
+                        <div class="card-body">
+                            <p class="card-text">Nossa acessoria é pensada para você, com pessoal treinado e qualificado para comunicação e interação adequadas com os pacientes e seus acompanhantes.</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-md-3 gy-3">
+                    <div class="card" style="width: 18rem; height: 22rem;">
+                        <img class="card-img-top" src="../../imagens/Clinica5.jpg" alt="Clinica Odontológica">
+                        <div class="card-body">
+                          <p class="card-text">Nossa instrumentação odontológica reúne as melhores tecnologias do mercado para tratamentos de alta qualidade, visando sempre o bem-estar do cliente.</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col-md-3 gy-3">
+                    <div class="card" style="width: 18rem; height: 22rem;">
+                        <img class="card-img-top" src="../../imagens/Clinica6.jpg" alt="Clinica Odontológica">
+                        <div class="card-body">
+                            <p class="card-text">Trabalhamos com monitoramento em tempo real dos procedimentos com o auxílio de imagens e telas de monitoramento do paciente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 gy-3">
+                    <div class="card" style="width: 18rem; height: 22rem;">
+                        <img class="card-img-top" src="../../imagens/Clinica7.jpg" alt="Consultório">
+                        <div class="card-body">
+                            <p class="card-text">Nossos quartos são equipados com todos os elementos necessários para emergências e oferecem tranquilidade ao paciente e acompahantes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 gy-3">
+                    <div class="card" style="width: 18rem; height: 22rem;">
+                        <img class="card-img-top" src="../../imagens/Clinica8.jpg" alt="Estetoscópio">
+                        <div class="card-body">
+                            <p class="card-text">Aqui sempre temos profissionais dispostos a atendê-lo a todo momento. Uma equipe organizada para atingir 100% do atendimento de pacientes.</p>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <div class="row" style="margin-bottom: 3%;">
+                <div class="col-md-3 gy-3">
+                    <div class="card" style="width: 18rem; height: 22rem;">
+                        <img class="card-img-top" src="../../imagens/Clinica9.jpg" alt="Corredor">
+                        <div class="card-body">
+                          <p class="card-text">Nossas instalações são sempre bem iluminadas para gerar um ambiente mais seguro para todos, funcionários, pacientes e acompanhantes.</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col-md-3 gy-3">
+                    <div class="card" style="width: 18rem; height: 22rem;">
+                        <img class="card-img-top" src="../../imagens/Clinica10.jpg" alt="Corredor">
+                        <div class="card-body">
+                            <p class="card-text">A MedCity preza por um espaço limpo e organizado, para melhor trânsito de pessoas e responsáveis na área interna das instalações. Na MedCity, sempre podemos chegar ao objetivo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 gy-3">
+                    <div class="card" style="width: 18rem; height: 22rem;">
+                        <img class="card-img-top" src="../../imagens/Clinica11.jpg" alt="Estetoscópio">
+                        <div class="card-body">
+                            <p class="card-text">Nossos instrumentos de trabalho são de alta precisão e qualidade. Portanto, exames e análises são entregues com qualidade e rapidez.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 gy-3">
+                    <div class="card" style="width: 18rem; height: 22rem;">
+                        <img class="card-img-top" src="../../imagens/Clinica12.jpg" alt="Cirurgiões">
+                        <div class="card-body">
+                            <p class="card-text">Nossa equipe de cirurgões é extremamente capacitada e trabalha com os melhores métodos e instrumentos da medicina atual.</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </main>
+    </div>
+        <footer class="footer">
+                <p id="fp">© 2022 | Todos os direitos reservados | Desenvolvido por Ana Paula Araújo Botelho</p>
+        </footer>
+
+        <script>
+            var button = document.querySelector("#login-btn");
+    
+            button.onclick = function(){
+                window.location.href = "../../../index.html";
+            }
+        </script>
+	<script>
+        var button = document.querySelector("#toggle-btn");
+
+        button.onclick = function(){
+            let nav = document.getElementById("mobile-nav");
+            if(nav.style.display == "none"){
+                nav.style.display = "block";
+            }else{
+                nav.style.display = "none";
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

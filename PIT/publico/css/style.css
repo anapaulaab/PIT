@@ -1,0 +1,314 @@
+*{
+    margin: auto;
+    padding: 0%;
+}
+
+header{
+    background-color: #757575;
+    color: azure;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+	min-height: 100%;
+	position: relative;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-columns: 300px;
+    padding-top: 3%;
+}
+
+.grid > a{
+    color: azure;
+    border-radius: 6px;
+    border: solid 1px lightblue;
+}
+
+.grid > a:hover{
+    color: azure;
+    border-radius: 6px;
+    border: solid 3px #80cbc4;
+    box-shadow: 0px 0px 8px 8px rgb(172, 223, 255);
+}
+
+address > i {
+    margin: 0 1%;
+}
+
+address{
+    padding-top: 2px 0;
+}
+
+img{
+    margin: 0%;
+}
+
+#item-1{
+    background-image: url('../imagens/cadastro.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: span 2;
+    width: 95%;
+    height: 95.5%;
+    margin: 3%;
+    color: azure;
+    border-radius: 6px;
+    
+}
+
+#item-2{
+    background-image: url('../imagens/galeria-fotos.jpeg');
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 95%;
+    margin: 3%;
+}
+
+#item-3{
+    background-image: url('../imagens/agendamento.jpeg');
+    background-repeat: no-repeat;
+    height: 486px;
+    width: 95%;
+    margin: 3%;
+}
+
+.nav-item{
+    border-radius: 10px;
+    border-right: lightgray solid 1px;
+    margin: 0 4px;
+}
+
+.nav-link{
+    border-radius: 10px;
+    color: teal;
+}
+
+.nav-link:hover{
+    background-color: #81d4fa;
+    border-radius: 10px;
+    color: white;
+}
+
+.nav-link:hover .nav-item{
+    background-color: #81d4fa;
+    border-radius: 10px;
+    color: white;
+}
+
+.footer{
+    text-align: center;
+    background-color: #80cbc4;
+    color: azure;
+    font-weight: bolder;
+    padding: 1%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#fp{
+    margin: 0%;
+}
+
+#cards-links{
+    display: none;
+}
+
+#title-card-links{
+    display: none;
+}
+
+
+.card{
+    text-align: justify;
+}
+
+.card-header{
+    width: 100%;
+}
+
+.descricao{
+    margin-bottom: 2%;
+}
+
+.valores{
+    margin-bottom: 2%;
+}
+
+.central{
+    border-radius: 10px;
+    justify-content: center;
+}
+
+form{
+    margin: 6%;
+    border: lightgray 1px solid;
+    border-radius: 7px;
+    padding: 2%;
+    font-size: 1.2em;
+}
+
+.addForm{
+    background-color: #81d4fa;
+    color: white;
+    font-weight: bolder;
+}
+
+#logo-login{
+    width: 23%; 
+    height: auto;
+}
+
+.preload {
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	background-color: #fff;
+	background-image: url('../imagens/preloader-gif.gif');
+	background-position: 50% 50%;
+	background-repeat:no-repeat;
+}
+
+#subtitulo-cad{
+    background-color: #757575;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-top: 1%;
+}
+
+.second{
+    display: none;
+}
+
+.circle-icon{
+    border: cadetblue solid 1px;
+}
+
+.seccao{
+    margin: 3% 0%;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: row;
+}
+.menu-mobile{
+    display: none;
+    flex-direction: row;
+}
+#logo-card{
+    border-right: lightblue 1px solid; 
+    padding-right: 2%;
+}
+#mobile-nav{
+    display: none;
+    width: 100%;
+    margin-top: 0;
+}
+@media (min-width: 1280px) and (max-width: 1024px){
+    #mobile-nav{
+    	display: none;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 1023px){ 
+    #cards-links{
+    	display: block;
+    }
+    #title-card-links{
+    	display: block;
+    }
+    header > address{
+	display: none;	
+    }
+    #login-form{
+	margin: 30% auto;
+    }
+    #fp{
+	font-size: 12px;
+    }
+    #toggle-btn{
+	margin-top: 6px;
+    }
+    .menu-mobile{
+        box-sizing: border-box;
+	height: 75px;
+	padding: 1rem;
+	display: flex;
+	align-itens: center;
+	justify-content: space-between;
+    }
+    .menu-desk{
+        display: none;
+    }
+    .presentation{
+        display: flex;
+        flex-direction: column;
+    }
+    #logo-card{
+        border: none; 
+        padding-right: 2%;
+    }
+    #navbarNavAltMarkup{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-item{
+        border-radius: 0%;
+        border-right: none;
+        margin: 0 4px;
+    }
+    
+    .nav-link{
+        border-radius: 0%;
+        width: 100%;
+    }
+    
+    .nav-link:hover{
+        background-color: #81d4fa;
+        border-radius: 0%;
+        color: white;
+    }
+    
+    .nav-link:hover .nav-item{
+        background-color: #81d4fa;
+        border-radius: 0;
+        color: white;
+    }
+    .grid{
+        display: none;
+    }
+    .top-card{
+        margin: 13% 0% 6% 0%;
+        background-color: #0abbb5;
+    }
+    #avanca{
+	width: 100%;
+    }
+    #toggle-btn{
+        right: 20;
+	top: 20;
+	position: absolute;
+    }
+    #logo-login{
+	display: none;
+    }
+}
+
+@media (max-width: 812px){
+    main{
+	heigth: 812px;
+    }
+}

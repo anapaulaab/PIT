@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MedCity | Saúde em primeiro lugar</title>
+    <link rel="icon" href="publico/imagens/medcity-logo-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="publico/css/style.css"/>
+    <script src="https://kit.fontawesome.com/fb10b6ad7c.js" crossorigin="anonymous"></script>
+    <script>
+		function preload(el, interval) {
+			var op = 1;
+			var timer = setInterval(function () {
+				if (op <= 0.7) {
+					clearInterval(timer);
+					el.style.display = 'none';
+					el.className = '';
+				}
+				el.style.opacity = op;
+				op -= op * 0.1;
+			}, interval);
+		}
+		window.onload = function () {
+			var div = document.getElementById('preload');
+			preload(div, 500);
+		};
+	</script>
+    <style>
+        #ci1{
+            padding: 10%;
+            color: white;
+            background-color: #3acbc6;
+            width: 100%;
+            align-self:center;
+        }
+        #ci2{
+            padding: 10%;
+            color: white;
+            background-color: #6adbd9;
+            width: 100%;
+            align-self:center;
+        }
+        #ci3{
+            padding: 10%;
+            color: white;
+            background-color: #86e2e1;
+            width: 100%;
+            align-self:center;
+        }
+        .ci{
+            padding: 10%;
+            color: white;
+            background-color: #44726d;
+            width: 100%;
+            align-self:center;
+        }
+        .ci:hover{
+            padding: 10%;
+            color: white;
+            background-color: #80cbc4;
+            width: 100%;
+            align-self:center;
+        }
+        .bc:hover{
+            color: white;
+            background-color: #44726d;
+        }
+        .class-2{
+            background-color: #3acbc6;
+            color: white;
+            font-weight: bolder;
+            font-size: 1.1rem;
+        } 
+
+        .class-3{
+            background-color: #6adbd9;
+            color: white;
+            font-weight: bolder;
+            font-size: 1.1rem;
+        }
+        .class-4{
+            background-color: #86e2e1;
+            color: cadetblue;
+            font-weight: bolder;
+            font-size: 1.1rem;
+        }
+	.class-5{
+            background-color: #cafcfb;
+            color: cadetblue;
+	    font-weight: bolder;
+            font-size: 1.1rem;
+        }
+
+	#cards-valores{
+	    margin-top: 0%;
+	}
+	#cards-links-3{
+	    display: none;
+	}
+	#title-card-links{
+    	    display: none;
+        }
+        #cards-valores{
+	margin-bottom: 100px;
+        }
+
+
+    .menu-mobile{
+        background-color: #0abbb5;
+    }
+
+@media (min-width: 1px) and (max-width: 1023px){ 
+    #title-card-links{
+    	display: block;
+    }
+    #cards-valores{
+	margin-bottom: 100px;
+    }
+     #ci1{
+            padding: 10%;
+            color: white;
+            background-color: #3acbc6;
+            width: 100%;
+            align-self:center;
+        }
+        #ci2{
+            padding: 10%;
+            color: white;
+            background-color: #6adbd9;
+            width: 100%;
+            align-self:center;
+        }
+        #ci3{
+            padding: 10%;
+            color: white;
+            background-color: #86e2e1;
+            width: 100%;
+            align-self:center;
+        }
+        .ci{
+            padding: 10%;
+            color: white;
+            background-color: #44726d;
+            width: 100%;
+            align-self:center;
+        }
+        .ci:hover{
+            padding: 10%;
+            color: white;
+            background-color: #80cbc4;
+            width: 100%;
+            align-self:center;
+        }
+        .bc:hover{
+            color: white;
+            background-color: #44726d;
+        }
+}
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <address>
+            <i class="fa fa-phone"></i>Central de Atendimento: (34) 1111-1111 | <i class="fa fa-envelope-o"></i>email: medcity_contact@ficmail.com 
+        </address>
+	<div class="menu-mobile sticky-top">
+		<a href="../clinica"><img src="publico/imagens/medcity-logo-alt.png" class="img-fluid" width="200"></a>
+	   	<button class="btn btn-outline-light" id="toggle-btn"><i class="fas fa-bars"></i></button>
+	</div>
+    </header>
+    <nav id="mobile-nav" class="col-12 col-sm-12 col-md-12 col-lg-7 col-lg-offset-2">
+		<a class="nav-link text-center text-white class-2" href="publico/html/galeria">Galeria de Fotos</a>
+                <a class="nav-link text-center text-white class-3" href="publico/html/cadastro">Cadastro de Endereço</a>
+                <a class="nav-link text-center text-white class-4" href="publico/html/agendamento">Agendamento</a>
+		<a class="nav-link text-center text-info class-5" href="index.html">Login</a>
+    </nav>
+
+    <div id="preload" class="preload"></div>
+    <div class="container">
+        <div class="menu-desk">
+            <nav class="navbar navbar-expand-lg bg-white d-flex justify-content-between">
+                <a class="navbar-brand" href="../clinica"><img src="publico/imagens/medcity-logo.png"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="publico/html/galeria">Galeria de Fotos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publico/html/cadastro">Cadastro de Endereço</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publico/html/agendamento">Agendamento</a></li>
+                </ul>
+                <button type="button" class="btn btn-outline-primary" id="login-btn">Login <i class="fa fa-user-circle-o"></i></button>
+            </nav>
+        </div>			      
+	<main>
+            <div class="grid">
+                <a href="publico/html/cadastro" id="item-1"></a>
+                <a href="publico/html/galeria" id="item-2"></a>
+                <a href="publico/html/agendamento" id="item-3"></a>
+            </div>
+            <h5 class="card-header text-center text-white top-card rounded" id="title-card-links">ACESSE</h5>
+            <div class="row g-3 seccao justify-content-center d-flex" id="cards-links-3">
+                <a href="publico/html/galeria" class="col-md-4 col-sm-4 text-center justify-content-center"><i class="fas fa-image fa-5x rounded-top" id="ci1"></i><p class="h6 text-dark card-header rounded-bottom bc">GALERIA</p></a>
+                <a href="publico/html/cadastro" class="col-md-4 col-sm-4 text-center justify-content-center"><i class="fas fa-address-card fa-5x rounded-top" id="ci2"></i><p class="h6 text-dark card-header rounded-bottom bc">CADASTRO DE ENDEREÇO</p></a>
+                <a href="publico/html/agendamento" class="col-md-4 col-sm-4 text-center justify-content-center"><i class="fa fa-calendar fa-5x rounded-top" id="ci3"></i><p class="h6 text-dark card-header rounded-bottom bc">AGENDAMENTO DE CONSULTA</p></a>
+            </div>
+            <h5 class="card-header descricao seccao rounded">SOBRE A MEDCITY</h5>
+            <div class="card-body presentation">
+                <img src="publico/imagens/medcity-logo.png" class="img-fluid" id="logo-card">
+                <p class="presentation" style="padding-left: 2%; text-align: justify;">Fundada em 1995, na cidade de Uberlândia, a Clínica Hospitalar MedCity oferece serviços e cuidados em diversas especialidades médicas, com compromisso, qualidade
+                    e profissionalismo. Referência na área da Saúde, em Uberlândia e região, a MedCity conta com os melhores equipamentos, instalações que oferecem conforto e segurança aos
+                    clientes e um corpo qualificado de profissionais, com pessoal treinado e especializado tanto no atendimento, quanto nas dependencias médicas. Nosso compromisso é um serviço que ofereça 
+                    qualidade e eficiência.</p>
+            </div>
+    
+            <h5 class="card-header seccao rounded">VALORES</h5>
+            <div class="row g-3 seccao" id="cards-valores">
+                <div class="col-md-2 text-center"><i class="fas fa-balance-scale fa-5x rounded-top ci"></i><p class="h6 card-header rounded-bottom bc">ÉTICA</p></div>
+                <div class="col-md-2 text-center"><i class="fas fa-award fa-5x rounded-top ci"></i><p class="h6 card-header rounded-bottom bc">QUALIDADE</p></div>
+                <div class="col-md-2 text-center"><i class="far fa-handshake fa-5x rounded-top ci"></i><p class="h6 card-header rounded-bottom bc">COMPROMETIMENTO</p></div>
+                <div class="col-md-2 text-center"><i class="fas fa-users fa-5x rounded-top ci"></i><p class="h6 card-header rounded-bottom bc">DEVER SOCIAL</p></div>
+                <div class="col-md-2 text-center"><i class="fas fa-seedling fa-5x rounded-top ci"></i><p class="h6 card-header rounded-bottom bc">SUSTENTABILIDADE</p></div>
+                <div class="col-md-2 text-center"><i class="fas fa-tasks fa-5x rounded-top ci"></i><p class="h6 card-header rounded-bottom bc">PROFISSIONALISMO</p></div>
+            </div>
+        </main>
+    </div>
+        <footer>
+            <div class="footer">
+                <p id="fp">© 2022 | Todos os direitos reservados | Desenvolvido por Ana Paula Araújo Botelho</p>
+            </div>
+        </footer>
+    <script>
+        var button = document.querySelector("#login-btn");
+
+        button.onclick = function(){
+            window.location.href = "index.html";
+        }
+    </script>
+    <script>
+        var button = document.querySelector("#toggle-btn");
+
+        button.onclick = function(){
+            let nav = document.getElementById("mobile-nav");
+            if(nav.style.display == "none"){
+                nav.style.display = "block";
+            }else{
+                nav.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
